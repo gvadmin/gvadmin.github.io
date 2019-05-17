@@ -1,0 +1,530 @@
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block
+}
+
+body {
+  line-height: 1
+}
+
+ol, ul {
+  list-style: none
+}
+
+blockquote, q {
+  quotes: none
+}
+
+blockquote:after, blockquote:before, q:after, q:before {
+  content: "";
+  content: none
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+html {
+  box-sizing: border-box
+}
+
+*, :after, :before {
+  box-sizing: inherit
+}
+
+body {
+  font-family: Montserrat, sans-serif
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 400px;
+  padding: 0 10px
+}
+
+.container.bg-2 {
+  background: #eee;
+  max-width: none
+}
+
+.container.bg-2 .content-block {
+  margin: 0 auto;
+  max-width: 400px;
+  padding: 30px 10px
+}
+
+.navbar {
+  background: #d56363;
+  height: 50px;
+  line-height: 50px
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between
+}
+
+.navbar .navbar-brand {
+  background: url(../images/logo.png) no-repeat 0 0;
+  background-size: 159px 36px;
+  text-indent: -9999px;
+  width: 231px;
+  margin: 0 auto;
+  background-position: center 8px;
+}
+
+.navbar a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none
+}
+
+.navbar a:focus, .navbar a:hover {
+  text-decoration: underline
+}
+
+.content {
+  min-height: calc(100vh - 230px);
+  padding: 50px 0;
+  text-align: center
+}
+
+.footer {
+  color: #eee;
+  background: #222;
+  min-height: 180px;
+  padding: 15px 0
+}
+
+.footer a {
+  color: inherit
+}
+
+.footer .footer-links, .footer .footer-text {
+  font-size: 1.2rem
+}
+
+.footer .footer-links li {
+  display: inline-block
+}
+
+.footer .footer-links li+li {
+  margin-left: 10px
+}
+
+@media (max-width:567px) {
+  .footer .footer-logo {
+    background: url(../images/bfb-logo.png) no-repeat 50%;
+    background-size: 150px;
+    height: 60px;
+    margin: 0 auto 10px;
+    width: 170px
+  }
+  .footer .footer-content {
+    text-align: center
+  }
+}
+
+@media (min-width:568px) {
+  .content {
+    min-height: calc(100vh - 160px)
+  }
+  .footer {
+    min-height: 110px
+  }
+  .footer .container {
+    display: flex;
+    max-width: 548px
+  }
+  .footer .footer-logo {
+    background: url(../images/bfb-logo.png) no-repeat 0 0;
+    background-size: 150px;
+    flex: 1 0 auto;
+    height: 100px;
+    width: 170px
+  }
+}
+
+html {
+  font-size: 10px
+}
+
+body {
+  font-size: 2rem
+}
+
+p {
+  line-height: 1.2;
+  margin-bottom: 15px
+}
+
+dl {
+  text-align: left
+}
+
+dl dt {
+  font-weight: 600;
+  margin-bottom: 5px
+}
+
+dl dd {
+  margin-bottom: 15px
+}
+
+dl.bulleted {
+  padding-left: 40px
+}
+
+dl.bulleted dt {
+  position: relative;
+  margin-bottom: 9px;
+}
+
+dl.bulleted dt:after {
+  background: #ca3b3b;
+  border-radius: 100%;
+  content: "";
+  display: block;
+  height: 14px;
+  left: -26px;
+  position: absolute;
+  top: 4px;
+  width: 14px
+}
+
+.sr-only {
+  left: -9999px;
+  position: absolute
+}
+
+.alert {
+  background: #ebb3b3;
+  padding: 15px;
+  text-align: left
+}
+
+.content-block.no-problem p:first-child, .content-block.no-problem p:nth-child(3) {
+  font-size: 2.4rem
+}
+
+.content-block.no-problem span {
+  color: #ca3b3b;
+  display: block;
+  font-weight: 700
+}
+
+.content-block.know-your-ni p:first-child {
+  font-size: 2.4rem
+}
+
+.content-block.find-your-ni {
+  padding-bottom: 50px
+}
+
+.content-block.find-your-ni p:first-child {
+  font-size: 2.4rem
+}
+
+.content-block.find-your-ni span {
+  display: block
+}
+
+.content-block.register-to-vote p {
+  font-size: 2.4rem;
+  font-weight: 600
+}
+
+.content-block.register-to-vote span {
+  display: block;
+  font-size: 2rem;
+  font-weight: 400
+}
+
+.content-block.registered p:nth-child(2) {
+  font-size: 2.4rem;
+  font-weight: 600
+}
+
+.content-block.registered p:nth-child(2) span {
+  color: #ca3b3b
+}
+
+.content-block.how-long-to-register.form-info p:first-child {
+  font-size: 2.4rem;
+  font-weight: 600;
+  padding: 0 15px;
+  text-align: left
+}
+
+.content-block.how-long-to-register.form-info dt span {
+  color: #ca3b3b;
+  float: right
+}
+
+.content-block.home-screen p:first-child, .content-block.how-long-to-register.postcode-check p:first-child {
+  font-size: 2.4rem;
+  font-weight: 600
+}
+
+.content-block.home-screen p:nth-child(2) {
+  color: #ca3b3b;
+  font-size: 2.4rem;
+  font-weight: 600
+}
+
+.socialimage {
+  margin: 0 auto 15px
+}
+
+.btn, .socialimage {
+  display: block;
+  width: 100%
+}
+
+.btn {
+  background: #ca3b3b;
+  border: 0;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 2rem;
+  font-weight: 600;
+  height: 50px;
+  line-height: 50px;
+  text-decoration: none
+}
+
+.btn:focus, .btn:hover {
+  background: #a52d2d
+}
+
+.btn.btn-outline {
+  background: none;
+  border: 1px solid #ca3b3b;
+  color: #ca3b3b
+}
+
+.btn-list {
+  padding-top: 15px
+}
+
+.btn-list li {
+  margin-bottom: 15px
+}
+
+.form-group {
+  margin-bottom: 30px;
+  text-align: left
+}
+
+.form-label {
+  display: block;
+  font-weight: 500;
+  margin: 0 0 5px
+}
+
+.form-label span {
+  font-weight: 400
+}
+
+.form-control {
+  border: 1px solid #999;
+  border-radius: 10px;
+  display: block;
+  font-family: inherit;
+  font-size: 2rem;
+  height: 45px;
+  line-height: 45px;
+  padding: 0 16px;
+  width: 100%
+}
+
+textarea.form-control {
+  height: auto
+}
+
+.form-check .form-check-input {
+  left: -9999px;
+  position: absolute
+}
+
+.form-check .form-check-label {
+  background: #eee;
+  border-radius: 10px;
+  cursor: pointer;
+  display: block;
+  font-weight: 500;
+  padding: 15px 15px 15px 40px;
+  position: relative
+}
+
+.form-check .form-check-label a {
+  color: inherit
+}
+
+.form-check [type=checkbox]:checked+.form-check-label, .form-check [type=radio]:checked+.form-check-label {
+  background: #ebb3b3
+}
+
+.form-check [type=checkbox]+.form-check-label:before, .form-check [type=checkbox]:checked+.form-check-label:after, .form-check [type=radio]+.form-check-label:before, .form-check [type=radio]:checked+.form-check-label:after {
+  content: "";
+  position: absolute
+}
+
+.form-check [type=radio]+.form-check-label:before, .form-check [type=radio]:checked+.form-check-label:after {
+  border-radius: 100%
+}
+
+.form-check [type=checkbox]+.form-check-label:before, .form-check [type=radio]+.form-check-label:before {
+  top: 14px;
+  left: 14px;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border: 1px solid #999
+}
+
+.form-check [type=checkbox]:checked+.form-check-label:after, .form-check [type=radio]:checked+.form-check-label:after {
+  background: #1585ff;
+  height: 10px;
+  left: 17px;
+  top: 17px;
+  width: 10px
+}
+
+/* NEW CSS */
+
+.home-content {
+  padding-top: 30px;
+}
+
+.title-eu-election,
+.title-days-left {
+  font-size: 36px;
+  color: #e00001;
+  font-weight: 600;
+}
+
+.title-days-left {
+  color: #2a2a2a;
+  font-size: 25px;
+  margin-top: 4px;
+}
+
+.title-day {
+  color: #2a2a2a;
+  font-size: 19px;
+  margin-top: 6px;
+}
+
+.list-container {
+  background: #f4f4f4;
+  padding: 2px 0 12px;
+  margin-top: 16px;
+}
+
+.title-info {
+    font-weight: 600;
+    font-size: 26px;
+    margin: 16px 0 9px;
+}
+
+.bullet-list {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.form-container {
+  padding-top: 3px;
+  padding-bottom: 30px;
+}
+
+
+
+@media (min-width:400px) {
+    .title-info {
+      font-size: 32px;
+    }
+}
+
+
+
+/* SHARE PAGE */
+
+.social-buttons {
+  margin: 30px 0 60px;
+}
+
+.button {
+    border-radius: 10px;
+    font-size: 21px;
+    font-weight: 500;
+    margin: 0 auto 10px;
+    padding: 12px 0;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.socmed-button {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0 0 0 30px;
+    position: relative;
+}
+
+.socmed-button #email, .socmed-button #facebook, .socmed-button #twitter, .socmed-button #whatsapp {
+    position: absolute;
+    left: 14px;
+    font-size: 27px;
+    margin-top: -4px;
+}
+
+svg:not(:root).svg-inline--fa {
+    overflow: visible;
+}
+
+.svg-inline--fa.fa-w-14 {
+    width: 0.875em;
+}
+
+.svg-inline--fa {
+    display: inline-block;
+    height: 1em;
+    vertical-align: -.125em;
+}
+
+.social-buttons a {
+  text-decoration: none;
+}
+
+.socmed-button.start-again {
+  font-size: 16px;
+  text-align: center;
+  font-weight: 700;
+  font-family: "Helvetica", sans-serif;
+  color: #FFFFFF;
+  background-color: #e00001;
+  border-radius: 11px;
+  display: inline-block;
+  padding: 8px 18px;
+  border: none;
+  overflow-wrap: break-word;
+  max-width: 100%;
+  width: 100% !important;
+  padding: 13px !important;
+  font-size: 21px !important;
+}

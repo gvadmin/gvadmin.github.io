@@ -1,0 +1,105 @@
+@font-face {
+  font-display: block;
+  font-family: Roboto;
+  src: url(https://assets.sendinblue.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2) format("woff2"), url(https://assets.sendinblue.com/font/Roboto/Latin/normal/normal/25c678feafdc175a70922a116c9be3e7.woff) format("woff")
+}
+
+@font-face {
+  font-display: fallback;
+  font-family: Roboto;
+  font-weight: 600;
+  src: url(https://assets.sendinblue.com/font/Roboto/Latin/medium/normal/6e9caeeafb1f3491be3e32744bc30440.woff2) format("woff2"), url(https://assets.sendinblue.com/font/Roboto/Latin/medium/normal/71501f0d8d5aa95960f6475d5487d4c2.woff) format("woff")
+}
+
+@font-face {
+  font-display: fallback;
+  font-family: Roboto;
+  font-weight: 700;
+  src: url(https://assets.sendinblue.com/font/Roboto/Latin/bold/normal/3ef7cf158f310cf752d5ad08cd0e7e60.woff2) format("woff2"), url(https://assets.sendinblue.com/font/Roboto/Latin/bold/normal/ece3a1d82f18b60bcce0211725c476aa.woff) format("woff")
+}
+
+#sib-container input:-ms-input-placeholder {
+  text-align: left;
+  font-family: "Helvetica", sans-serif;
+  color: #c0ccda;
+}
+
+#sib-container input::placeholder {
+  text-align: left;
+  font-family: "Helvetica", sans-serif;
+  color: #c0ccda;
+}
+
+/* CUSTOM */
+
+#sib-container {
+  border: none !important;
+}
+
+.entry__label {
+  margin-bottom: 1px !important;
+}
+
+.entry_block .input, .form_block .form__entry .input {
+    padding: 7px 12px !important;
+}
+
+.sib-form-block {
+    padding-top: 0 !important;
+    padding-bottom: 8px !important;
+}
+
+#sib-container {
+    padding: 20px 0 !important;
+}
+
+.entry__choice label {
+    line-height: 1.2 !important;
+    font-size: 16px !important;
+}
+
+.entry__choice {
+    text-indent: -1.2em !important;
+}
+
+.sib-form-block__button {
+  width: 100% !important;
+  padding: 13px !important;
+  font-size: 21px !important;
+}
+
+.entry__error {
+  padding: 11px 16px !important;
+}
+
+.entry__label:after {
+    display: none !important;
+}
+
+#sib-form-container {
+  background: #ffffff !important;
+}
+
+.sib-form-message-panel--active {
+  margin: 0 !important;
+}
+
+.entry__field {
+  -moz-border-radius: 10px !important;
+  -webkit-border-radius: 10px !important;
+  -khtml-border-radius: 10px !important;
+  border-radius: 10px !important;
+}
+
+#sib-form > div:nth-child(3) {
+  padding-top: 10px !important;
+}
+
+#sib-form > div:nth-child(4) {
+  padding-bottom: 15px !important;
+}
+
+.form__label-row,
+.entry__label {
+  color: #565656 !important;
+}

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!--<link rel="prefetch" href="postal-vote" />
+  <link rel="prefetch" href="remind-me" />-->
+  <title>Getvoting.org</title>
+  <meta name="description" content="Getvoting.org - Everything you need to get it done" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet" />
+  <link rel="stylesheet" href="css/app.css" />
+  <link rel="stylesheet" href="css/sibform.css" />
+  <meta itemprop="name" content="Getvoting.org" />
+  <meta itemprop="description" content="Getvoting.org - Everything you need to get it done" />
+  <meta itemprop="image" content="images/getvoting.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@BestForBritain" />
+  <meta name="twitter:title" content="Getvoting.org - Everything you need to get it done" />
+  <meta name="twitter:description" content="Getvoting.org - Everything you need to get it done" />
+  <meta name="twitter:creator" content="@BestForBritain" />
+  <meta name="twitter:image:src" content="https://getvoting.org/images/getvoting.jpg" />
+
+  <meta property="og:title" content="Getvoting.org - Everything you need to get it done" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="images/getvoting.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:description" content="Getvoting.org - Everything you need to get it done" />
+  <meta property="og:site_name" content="Best For Britain" />
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-98374795-5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-98374795-5');
+  </script>
+  <!-- Facebook Pixel Code -->
+<script>
+    ! function(f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function() {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1871418283117093');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+  <img height="1" width="1" src="https://www.facebook.com/tr?id=1871418283117093&ev=PageView&noscript=1"/>
+</noscript>
+  <!-- End Facebook Pixel Code -->
+
+  <script>
+    $(function() {
+
+      function daysUntil(year, month, day) {
+        var now = new Date(),
+            dateEnd = new Date(year, month - 1, day), // months are zero-based
+            days = (dateEnd - now) / 1000/60/60/24;   // convert milliseconds to days
+
+        return Math.round(days);
+      }
+
+      daysLeft = daysUntil(2019, 5, 23);
+      //alert(daysLeft);
+
+      if (daysLeft == -1) {
+        daysLeftString = 'Vote today!';
+      } else if (daysLeft == 1) {
+        daysLeftString = 'Vote in ' + daysLeft + ' day';
+      } else if (daysLeft == 0) {
+        daysLeftString = 'Tomorrow';
+      } else {
+        daysLeftString = 'Vote in ' + daysLeft + ' days';
+      }
+
+      $( ".title-days-left" ).text(daysLeftString);
+
+    });
+  </script>
+
+  <!-- SEND IN BLUE FORM -->
+  <link rel="stylesheet" href="https://assets.sendinblue.com/component/form/61c63ac2f8837041dc7e.css">
+  <link rel="stylesheet" href="https://assets.sendinblue.com/component/clickable/74ef9830e6b42f1f3c59.css">
+  <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+  <script src="https://www.google.com/recaptcha/api.js?hl=en"></script>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="/">Get Voting</a>
+    </div>
+  </nav>
+  <div class="content pt-3 home-content">
+    <div class="container">
+      <div class="content-block home-screen">
+        <div class="title-eu-election">EU Election</div>
+        <div class="title-days-left"></div>
+        <div class="title-day">Thurs 23 May</div>
+
+        <div class="list-container">
+          <div class="title-info">Get info you need</div>
+          <div class="bullet-list">
+            <dl class="bulleted">
+              <dt>Vote reminders</dt>
+              <dt>Where to go</dt>
+              <dt>Candidate list</dt>
+            </dl>
+          </div>
+        </div>
+      </div>
+      <div class="form-container">
+
+
+        <!-- FORM START -->
+
+        <div id="sib-form-container" class="sib-form-container" style="text-align: center;
+           background-color: #EFF2F7;                                 ">
+          <div id="error-message" class="sib-form-message-panel" style=" font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949; max-width:540px;">
+            <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+              <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
+                <path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z"
+                />
+              </svg>
+              <span class="sib-form-message-panel__inner-text">
+                          Your subscription could not be saved. Please try again.
+                      </span>
+            </div>
+          </div>
+          <div></div>
+          <div id="success-message" class="sib-form-message-panel" style=" font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#085229; background-color:#e7faf0; border-radius:3px; border-color:#13ce66; max-width:540px;">
+            <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+              <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
+                <path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z"
+                />
+              </svg>
+              <span class="sib-form-message-panel__inner-text">
+                          Your subscription has been successful.
+                      </span>
+            </div>
+          </div>
+          <div></div>
+          <div id="sib-container" class="sib-container--large sib-container--vertical" style=" text-align:center; background-color:rgba(255,255,255,1); max-width:540px; border-radius:3px; border-width:1px; border-color:#C0CCD9; border-style:solid;">
+            <form id="sib-form" method="POST" action="https://sibforms.com/serve/MUIEAN1fwmZCDGkAy4izx9AwUxkm1nTq41lNH3miP0oJGCKs4nQgoF9erNaKYsCQyyZuDW5KNKhN4ScoBvX8E5E6PV7pZ6ub5oPQyl5r9zjknPhbfISZcVcSL73jI88r1MwXgOHjkMBdYqxMj6-w9NHz0_CfJExCadjXHDvpUmPMntfwoHgYtB0QtRzukRYPkB-lh5DPjktEZL-b">
+              <div class="sib-input sib-form-block">
+                <div class="form__entry entry_block">
+                  <div class="form__label-row ">
+                    <label class="entry__label" style=" font-size:16px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#3c4858;" for="POSTCODE" data-required="*">
+                      Postcode
+                    </label>
+
+                    <div class="entry__field">
+                      <input class="input" type="text" id="POSTCODE" name="POSTCODE" autocomplete="off" placeholder="Postcode" data-required="true" required />
+                    </div>
+                  </div>
+
+                  <label class="entry__error entry__error--primary" style=" font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+                  </label>
+                </div>
+              </div>
+              <div class="sib-input sib-form-block">
+                <div class="form__entry entry_block">
+                  <div class="form__label-row ">
+                    <label class="entry__label" style=" font-size:16px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#3c4858;" for="EMAIL" data-required="*">
+                      Email
+                    </label>
+
+                    <div class="entry__field">
+                      <input class="input" type="email" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Email" data-required="true" required />
+                    </div>
+                  </div>
+
+                  <label class="entry__error entry__error--primary" style=" font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+                  </label>
+                </div>
+              </div>
+              <div class="sib-optin sib-form-block" data-required="true">
+                <div class="form__entry entry_mcq">
+                  <div class="form__label-row ">
+                    <div class="entry__choice">
+                      <label>
+                        <input type="checkbox" class="input_replaced" value="1" id="GDPR" name="GDPR" required />
+                        <span class="checkbox checkbox_tick_positive"></span>Send me vote reminders, info and get out the vote ideas
+                      </label>
+                    </div>
+                  </div>
+                  <label class="entry__error entry__error--primary" style=" font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+                  </label>
+                </div>
+              </div>
+              <div class="sib-optin sib-form-block" data-required="true">
+                <div class="form__entry entry_mcq">
+                  <div class="form__label-row ">
+                    <div class="entry__choice">
+                      <label>
+                        <input type="checkbox" class="input_replaced" value="1" id="PRIVACY" name="PRIVACY" required />
+                        <span class="checkbox checkbox_tick_positive"></span>I agree to the terms and privacy policy
+                      </label>
+                    </div>
+                  </div>
+                  <label class="entry__error entry__error--primary" style=" font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+                  </label>
+                </div>
+              </div>
+              <div class="sib-form-block" style="text-align: center">
+                <button class="sib-form-block__button" style=" font-size:16px; text-align:center; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#FFFFFF; background-color:#e00001; border-radius:11px;" form="sib-form" type="submit">
+                  Submit
+                </button>
+                <div class="sib-loader" style="display: none;">
+                  <div style="background: #e00001;"></div>
+                  <div style="background: #e00001;"></div>
+                  <div style="background: #e00001;"></div>
+                  <div style="background: #e00001;"></div>
+                  <div style="background: #e00001;"></div>
+                  <div style="background: #e00001;"></div>
+                  <div style="background: #e00001;"></div>
+                  <div style="background: #e00001;"></div>
+                  <div style="background: #e00001;"></div>
+                  <div style="background: #e00001;"></div>
+                  <div style="background: #e00001;"></div>
+                  <div style="background: #e00001;"></div>
+                </div>
+              </div>
+              <input type="text" name="email_address_check" value="" class="input--hidden">
+              <input type="hidden" name="locale" value="en">
+            </form>
+          </div>
+          <script>
+            window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
+
+            window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
+
+            window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank. ";
+
+            window.GENERIC_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
+
+
+
+
+            window.translation = {
+              common: {
+                selectedList: '{quantity} list selected',
+                selectedLists: '{quantity} lists selected'
+              }
+            };
+
+            var AUTOHIDE = Boolean(0);
+          </script>
+          <script src="https://sibforms.com/forms/end-form/build/main.js">
+          </script>
+        </div>
+
+        <!-- FORM END -->
+
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container">
+      <div class="footer-logo"></div>
+      <div class="footer-content">
+        <p class="footer-text">
+          Promoted by Best for Britain, the campaign name of UK-EU OPEN POLICY LIMITED registered at International House, 24 Holborn Viaduct, London, EC1A 2BN. Best for Britain is registered with The Electoral Commission.
+        </p>
+        <ul class="footer-links">
+          <li>
+            <a href="https://www.bestforbritain.org/contact" target="_blank">Contact</a>
+          </li>
+          <li>
+            <a href="https://www.bestforbritain.org/privacy_policy" target="_blank">Privacy</a>
+          </li>
+          <li>
+            <a href="https://www.bestforbritain.org/terms_of_use" target="_blank">Terms</a>
+          </li>
+          <li>
+            <a href="https://www.bestforbritain.org/cookies" target="_blank">Cookies</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
